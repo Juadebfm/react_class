@@ -1,5 +1,15 @@
+import DetailsComponents from "./mini-components/DetailsComponents";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <DetailsComponents
+        title={`Anyhu`}
+        details={`i dey here`}
+        btnText={`Show workings`}
+      />
+    </footer>
+  );
 };
 
 export default Footer;

@@ -17,7 +17,14 @@ const App = () => {
       <Services />
       <Reasons />
       <CTA />
-      <Testimonials />
+      <Testimonials
+        testimonialHeading={`Why people love our products`}
+        testimonialSubTitle={`I know oooo`}
+      />
+      <Testimonials
+        testimonialHeading={`What people say about our products`}
+        testimonialSubTitle={`They love it`}
+      />
       <Footer />
     </main>
   );
