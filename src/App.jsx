@@ -1,25 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Secondpage from "./pages/Secondpage";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Info from "./components/Info";
-import Services from "./components/Services";
-import Reasons from "./components/Reasons";
-import CTA from "./components/CTA";
-import Testimonials from "./components/Testimonials";
+import Thirdpage from "./pages/Thirdpage";
 
 const App = () => {
   return (
-    <main className="overflow-x-hidden scroll-smooth font-mont">
-      <Navbar />
-      <Hero />
-      <Info />
-      <Services />
-      <Reasons />
-      <CTA />
-      <Testimonials />
-      <Footer />
-    </main>
+    <div className="overflow-x-hidden font-mont scroll-smooth">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/second_page" element={<Secondpage />} />
+          <Route path="/third_page" element={<Thirdpage />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
