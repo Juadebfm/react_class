@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         mont: ["Montserrat", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
       colors: {
         brainyWaveBlack: "#161C2D",

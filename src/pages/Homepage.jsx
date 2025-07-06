@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "../components/Hero";
+import Info from "../components/Info";
 
 const Homepage = () => {
   return (
-    <main className="bg-red-500 text-white text-3xl min-h-screen flex items-center justify-center">
-      Homepage
+    <main>
+      <Hero />
+      <Info/>
     </main>
   );
 };
